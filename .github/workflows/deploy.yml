@@ -18,8 +18,7 @@ jobs:
       - name: Deploy to FTP server
         uses: SamKirkland/FTP-Deploy-Action@4.4.0
         with:
-          server: ftp://ftp.swco2529.odns.fr
+          server: ftp.swco2529.odns.fr
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: build
-          server-dir: /
